@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Robert Sanchez — Rubber Duckies</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f2f2f2;
+        margin: 0;
+        padding: 20px;
+        line-height: 1.6;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+      }
+
+      form {
+        background: #ffffff;
+        padding: 20px;
+        max-width: 500px;
+        margin: 0 auto 40px auto;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+        text-align: left;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      input,
+      textarea {
+        width: 85%;
+        margin: 8px auto 0 auto;
+        display: block;
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+      }
+
+      button {
+        width: 85%;
+        background: #0077cc;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 20px auto 0 auto;
+        display: block;
+        font-size: 1rem;
+      }
+
+      button:hover {
+        background: #005fa3;
+      }
+
+      table {
+        width: 80%;
+        margin: 0 auto;
+        border-collapse: collapse;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      th,
+      td {
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+      }
+
+      thead {
+        background: #0077cc;
+        color: white;
+      }
+
+      tfoot {
+        background: #eee;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Contact Robert Sanchez</h1>
+    <h2>Rubber Duckies — Order or Ask a Question</h2>
+
+    <!-- CONTACT FORM -->
+    <form
+      action="mailto:robsanchez124@gmail.com"
+      method="POST"
+      enctype="text/plain"
+      aria-label="Contact Form"
+    >
+      <label for="name">Your Name</label>
+      <input id="name" name="name" type="text" required aria-required="true" />
+
+      <label for="email">Your Email</label>
+      <input
+        id="email"
+        name="email"
+        type="email"
+        required
+        aria-required="true"
+      />
+
+      <label for="qty">How Many Duckies?</label>
+      <input
+        id="qty"
+        name="quantity"
+        type="number"
+        min="1"
+        placeholder="e.g., 5"
+        required
+        aria-required="true"
+      />
+
+      <label for="message">Message</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="4"
+        placeholder="Ask me anything…"
+      ></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+
+    <!-- PRODUCT TABLE -->
+    <h2>Rubber Duckies — Price List</h2>
+
+    <table aria-label="Rubber Duckies Price Table">
+      <thead>
+        <tr>
+          <th>Duck Type</th>
+          <th>Color</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Classic Duck</td>
+          <td>Yellow</td>
+          <td>$3.00</td>
+        </tr>
+        <tr>
+          <td>Ninja Duck</td>
+          <td>Black</td>
+          <td>$5.00</td>
+        </tr>
+        <tr>
+          <td>Unicorn Duck</td>
+          <td>Rainbow</td>
+          <td>$7.00</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="3">All orders ship within 2–3 business days</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
